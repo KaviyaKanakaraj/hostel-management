@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+#grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px;
+}
+.content-box{
+    background-color: gray;
+    max-width: 90%;
+    
+    padding: 20px;
+}
+.content-text{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
