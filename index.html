@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSGiTech Hostel</title>
     <link rel="stylesheet" href="stylesheet.css" />
-</head>
-<body>
-    <div id="grid-container">
-        <div class="content-box">
-                <div class="content-text">
-                    Leave Form Application
-                </div>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/sample1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
             </div>
-            <div class="content-box">
-                <div class="content-text">
-                Outing Form Application
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assets/sample2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
             </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/sample3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
         </div>
-        <div class="content-box">
-            <div class="content-text">
-                Room Allocation
-            </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
         </div>
-        <div class="content-box">
-            <div class="content-text">
-                Mess Renumeration Form
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-text">
-                Mess Bill
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-text">
-                Token Request
-            </div>
-        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        </script>        
     </div>
-</body>
+    <div id="grid-container">
+      <div class="content-box">
+        <img class="img-box" src="assets/leaveform.png" />
+      </div>
+      <div class="content-box">
+        <img class="img-box" src="assets/outing.png" />
+      </div>
+      <div class="content-box">
+        <img class="img-box" src="assets/room.png" />
+      </div>
+      <div class="content-box">
+        <img class="img-box" src="assets/renumeration.png" />
+      </div>
+      <div class="content-box">
+        <img class="img-box" src="assets/mess.png" />
+      </div>
+      <div class="content-box">
+        <img class="img-box" src="assets/token.png" />
+      </div>
+    </div>
+  </body>
 </html>
