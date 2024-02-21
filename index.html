@@ -5,76 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSGiTech Hostel</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="data.json"></script>
     <script src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="notif-grid">
+    <header>
+      <div id="logo-header">
+        <div id="logo-container">
+          <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
+        </div>
+        <div id="logo-title">
+          <p style="font-size: larger; font-weight: bolder;">PSGiTech Girls Hostel</p>
+          <p style="font-size: large;">PSG Institute of Technology and Applied Research</p>
+          <p style="font-size: medium;">Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu 641062</p>
+        </div>
+      </div>
+      <!-- <nav id="top-nav">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav> -->
+    </header>
+      <div id="notif-grid">
         <div class="notif-grid-content">
-            <div id="marqueeContainer">
-                <div>NOTIFICATION!!!</div>
-                <div id="marqueeContent">
-                    <p>Today room cleaning from 301 to 322</p>
-                    <p>Zumba session starts at 5:30pm GET READY!!!</p>
-                    <p>Today snack menu changed,biscuit packet will be provided.</p>
-                    <p>REMAINDER FOR HOSTEL FEES DUE, LAST DATE: 15 DEC</p>
-                </div>
-            </div>
+          <div id="marqueeContent">
+            <marquee direction="up" height="200" scrollamount="2" scrolldelay="20" vspace="10">
+              <p>Today room cleaning from 301 to 322</p>
+              <p>Zumba session starts at 5:30pm GET READY!!!</p>
+              <p>Today snack menu changed,biscuit packet will be provided.</p>
+              <p>REMAINDER! Hostel Fee Due on 15 DEC</p>
+            </marquee>
+          </div>
         </div>
         <div class="notif-grid-content">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="assets/sample1.jpeg" style="width:500px">
-                </div>
-                
-                <div class="mySlides fade">
-                    <img src="assets/sample2.jpeg" style="width:500px">
-                </div>
-                
-                <div class="mySlides fade">
-                    <img src="assets/sample3.jpeg" style="width:500px">
-                </div>
-                
-                <div class="mySlides fade">
-                    <img src="assets/sample4.jpeg" style="width:500px">
-                </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                </div>
-            </div>
-            <script>
-                let slideIndex = 0;
-                showSlides();
-            </script>        
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="assets/sample1.jpeg" style="width: 500px" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/sample2.jpeg" style="width: 500px" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/sample3.jpeg" style="width: 500px" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/sample4.jpeg" style="width: 500px" />
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
-        <div class="notif-grid-content">
-            <div>Today's Menu</div>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+        </script>
+      </div>
+      <div class="notif-grid-content">
+        <div>
+          <div>Today's Menu</div>
+          <div>Breakfast: Idli, Vada, Sambar, Coconut Chutney</div>
+          <div>Lunch: Lemon Rice, Potato, White Rice, Rasam, Curd, Apallam</div>
+          <div>Snacks: Mixture, Tea, Bread, Jam</div>
+          <div>Dinner: Aloo Chappathi, Gravy, Curd Rice, Tomato Sevai</div>
         </div>
+      </div>
     </div>
     <div id="grid-container">
       <div class="content-box">
-        <a href="leaveForm.html"><img class="img-box" src="assets/leaveform.png" /></a>
+        <a href="leaveForm.html" class="photo">
+          <img class="img-box" src="assets/leaveform.png" />
+          <div class="glow-wrap">
+            <i class="glow"></i>
+          </div>
+        </a>
       </div>
       <div class="content-box">
-        <a href="outingForm.html"><img class="img-box" src="assets/outing.png" /></a>
+        <a href="outingForm.html"
+          ><img class="img-box" src="assets/outing.png"
+        /></a>
       </div>
       <div class="content-box">
-        <a href="roomAllocation.html"><img class="img-box" src="assets/room.png" /></a>
+        <a href="roomAllocation.html"
+          ><img class="img-box" src="assets/room.png"
+        /></a>
       </div>
       <div class="content-box">
-        <a href="messRenumeration.html"><img class="img-box" src="assets/renumeration.png" /></a>
+        <a href="messRenumeration.html"
+          ><img class="img-box" src="assets/renumeration.png"
+        /></a>
       </div>
       <div class="content-box">
-        <a href="messBill.html"><img class="img-box" src="assets/mess.png" /></a>
+        <a href="messBill.html"
+          ><img class="img-box" src="assets/mess.png"
+        /></a>
       </div>
       <div class="content-box">
         <a href="token.html"><img class="img-box" src="assets/token.png" /></a>

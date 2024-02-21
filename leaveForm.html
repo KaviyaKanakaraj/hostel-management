@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSGiTech Hostel | Leave Form</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color:rgb(23, 181, 181);;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+      form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          min-width:500px;
+      }
+      input[type="text"], input[type="number"], input[type="tel"], input[type="date"] {
+          width: calc(100% - 20px);
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+      }
+      textarea {
+          width: calc(100% - 20px);
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+      }
+      input[type="submit"] {
+          background-color: rgb(2, 78, 93);
+          color: #fff;
+          padding: 8px 20px;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      input[type="submit"]:hover {
+          background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <div style="margin:150px">
+      <form>
+        <h2>Leave Form</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="registerNumber">Register Number:</label><br>
+        <input type="text" id="registerNumber" name="registerNumber"><br>
+        <label for="roomNumber">Room Number:</label><br>
+        <input type="text" id="roomNumber" name="roomNumber"><br>
+        <label for="parentPhoneNumber">Parent Phone Number:</label><br>
+        <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber"><br>
+        <label for="reason">Reason for Leave:</label><br>
+        <textarea id="reason" name="reason" rows="4"></textarea><br>
+        <label for="outDate">Date of Leaving:</label><br>
+        <input type="date" id="outDate" name="outDate"><br>
+        <label for="outTime">Time of Leaving:</label><br>
+        <input type="text" id="outTime" name="outTime" placeholder="HH:MM"><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>

@@ -5,6 +5,26 @@ body {
   background-color: rgb(23, 181, 181);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  font-size: 20px;
+}
+#top-nav{
+  top:50px;
+  position: absolute;
+}
+#logo-header{
+  display:inline-flex;
+  padding: 10px;
+  position:absolute;
+  top:0px;
+}
+#logo-container{
+  padding:10px;
+  max-width:150px;
+}
+#logo-container img{
+  padding-top:20px;
+  max-height:100px;
+  width:auto;
 }
 #grid-container {
   display: grid;
@@ -26,16 +46,20 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
+  left:0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(2, 78, 93);
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: 25px;
 }
 
 li {
   float: left;
+  display: flex;
+  align-items: center;
 }
 
 li a {
@@ -88,7 +112,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  background-color: teal;
 }
 
 .fade {
@@ -108,6 +132,7 @@ img {vertical-align: middle;}
 #notif-grid{
   display: grid;
   grid-template-columns: 25% 50% 25%;
+  margin-top: 100px;
 }
 .notif-grid-content{
   max-width: 90%;
@@ -118,7 +143,6 @@ img {vertical-align: middle;}
   align-items: center;
   margin-left:20px;
 }
-
 #marqueeContainer {
     white-space: nowrap;
     overflow: hidden;
@@ -130,11 +154,6 @@ img {vertical-align: middle;}
     margin-top: 150px;
 }
 
-#marqueeContent {
-    display: inline-block;
-    animation: marqueeAnimation 10s linear infinite;
-}
-
 @keyframes marqueeAnimation {
     from {
         transform: translateY(100%);
@@ -142,4 +161,82 @@ img {vertical-align: middle;}
     to {
         transform: translateY(-100%);
     }
+}
+/*
+.content-box .photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.content-box .photo .glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.content-box .photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.content-box .photo:hover img,
+.content-box .photo:hover .glow-wrap{
+  margin-top: 0;
+}*/
+#hostel-contact{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#council-contact-container{
+  margin: 150px;
+}
+#faculty-contact-container{
+  margin: 150px;
+}
+.contact-container{
+  padding: 20px;
+}
+.contact-info-container{
+  display: grid;
+  grid-template-columns: 180px 350px;
+}
+.contact-img{
+  padding:10px;
+}
+.contact-details{
+  padding:10px;
+}
+.supervisor-container .contact-details{
+  width: 500px;
+}
+.title-text{
+  font-size: 50px;
+}
+.name-text{
+  font-weight: bold;
+  width: 200px;
+}
+.token-grid-container{
+  display: flexbox;
+  grid-template-columns: auto auto auto;
+  margin: 50px;
+}
+.token-grid-container .content-box{
+  max-width: 90%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSGiTech Hostel | Leave Form</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color:rgba(23, 181, 181);
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+      form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          width: 500px;
+      }
+      input[type="text"], input[type="number"], input[type="tel"] {
+          width: calc(100% - 20px);
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+      }
+      input[type="submit"] {
+          background-color:  RGB(2,78,93);
+          color: #fff;
+          padding: 8px 20px;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      input[type="submit"]:hover {
+          background-color:rgb(0, 107, 123);
+      }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <div style="top:150px">
+    <form>
+      <h2>Outing Form</h2>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="registerNumber">Register Number:</label><br>
+      <input type="text" id="registerNumber" name="registerNumber"><br>
+      <label for="roomNumber">Room Number:</label><br>
+      <input type="text" id="roomNumber" name="roomNumber"><br>
+      <label for="studentPhoneNumber">Student Phone Number:</label><br>
+      <input type="tel" id="studentPhoneNumber" name="studentPhoneNumber"><br>
+      <label for="parentPhoneNumber">Parent Phone Number:</label><br>
+      <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber"><br>
+      <label for="outTime">Out Time:</label><br>
+      <input type="text" id="outTime" name="outTime" placeholder="YYYY-MM-DD HH:MM"><br>
+      <input type="submit" value="Submit">
+  </form>
+    </div>
+</body>
+</html>

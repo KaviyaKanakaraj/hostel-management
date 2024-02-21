@@ -1,3 +1,11 @@
+
+async function loadData() {
+  const response = await fetch("getMenuItemsForTheDate.php?date=2024-01-01");
+  const data = await response.json();
+  console.log(data);
+}
+
+loadData();
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
