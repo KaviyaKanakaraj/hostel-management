@@ -1,21 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSGiTech Hostel | Leave Form</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <div class="logo-container">
+          <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
+        </div>
+        <div id="logo-title">
+          <p style="font-size: larger; font-weight: bolder;margin-bottom: 5px;margin-top: 40px;">
+            PSGiTech Girls Hostel
+          </p>
+          <p style="font-size: large;margin-top: 0px;margin-bottom: 0px;">
+            PSG Institute of Technology and Applied Research
+          </p>
+          <p style="font-size: medium;margin-top: 0px;">
+            Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu
+            641062
+          </p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="activities.html">Activities</a></li> -->
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
       </nav>
-    <div style="top:50px">
-        Leave Form Application
+    </header>
+    <div>
+      <h2>Token Charges:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Token Name</th>
+            <th>Token Amt (INR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Omelette</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Chicken (20 Tokens)</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Guest Token<br>(Breakfast/Lunch/Dinner)</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Chilly Gobi</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Other Charges for January 2024:</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Charges</th>
+            <th>Amount (INR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Servant Salary</td>
+            <td>702</td>
+          </tr>
+          <tr>
+            <td>Electricity Charges</td>
+            <td>524</td>
+          </tr>
+          <tr>
+            <td>Water Charges</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Laundry Charges</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Deepavali Celebrations</td>
+            <td>188</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <td id="totalOtherCharges"></td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-</body>
+  </body>
 </html>

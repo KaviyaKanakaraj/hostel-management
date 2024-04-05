@@ -1,21 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSGiTech Hostel | Leave Form</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <div class="logo-container">
+          <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
+        </div>
+        <div id="logo-title">
+          <p style="font-size: larger; font-weight: bolder;margin-bottom: 5px;margin-top: 40px;">
+            PSGiTech Girls Hostel
+          </p>
+          <p style="font-size: large;margin-top: 0px;margin-bottom: 0px;">
+            PSG Institute of Technology and Applied Research
+          </p>
+          <p style="font-size: medium;margin-top: 0px;">
+            Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu
+            641062
+          </p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="activities.html">Activities</a></li> -->
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
       </nav>
-    <div>
-        Room Allocation Application
+    </header>
+    <div class="form-content">
+      <form method="post">
+        <fieldset>
+          <legend>Resident 1</legend>
+          <label for="name1">Name:</label>
+          <input type="text" id="name1" name="name1" required /><br /><br />
+          <label for="year1">Year of Study:</label>
+          <input type="text" id="year1" name="year1" required /><br /><br />
+          <label for="department1">Department:</label>
+          <input
+            type="text"
+            id="department1"
+            name="department1"
+            required
+          /><br /><br />
+          <label for="phone1">Phone Number:</label>
+          <input type="text" id="phone1" name="phone1" required /><br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Resident 2</legend>
+          <label for="name2">Name:</label>
+          <input type="text" id="name2" name="name2" required /><br /><br />
+          <label for="year2">Year of Study:</label>
+          <input type="text" id="year2" name="year2" required /><br /><br />
+          <label for="department2">Department:</label>
+          <input
+            type="text"
+            id="department2"
+            name="department2"
+            required
+          /><br /><br />
+          <label for="phone2">Phone Number:</label>
+          <input type="text" id="phone2" name="phone2" required /><br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Resident 3</legend>
+          <label for="name3">Name:</label>
+          <input type="text" id="name3" name="name3" required /><br /><br />
+          <label for="year3">Year of Study:</label>
+          <input type="text" id="year3" name="year3" required /><br /><br />
+          <label for="department3">Department:</label>
+          <input
+            type="text"
+            id="department3"
+            name="department3"
+            required
+          /><br /><br />
+          <label for="phone3">Phone Number:</label>
+          <input type="text" id="phone3" name="phone3" required /><br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Resident 4</legend>
+          <label for="name4">Name:</label>
+          <input type="text" id="name4" name="name4" required /><br /><br />
+          <label for="year4">Year of Study:</label>
+          <input type="text" id="year4" name="year4" required /><br /><br />
+          <label for="department4">Department:</label>
+          <input
+            type="text"
+            id="department4"
+            name="department4"
+            required
+          /><br /><br />
+          <label for="phone4">Phone Number:</label>
+          <input type="text" id="phone4" name="phone4" required /><br /><br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
-</body>
+  </body>
 </html>

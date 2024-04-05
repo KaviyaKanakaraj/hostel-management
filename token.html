@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSGiTech Hostel | Leave Form</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+    <style>
+      table img {
+        max-width: 200px;
+      }
+      button {
+        background-color: RGB(2, 78, 93);
+        color: #fff;
+        padding: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <div class="logo-container">
+          <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
+        </div>
+        <div id="logo-title">
+          <p style="font-size: larger; font-weight: bolder;margin-bottom: 5px;margin-top: 40px;">
+            PSGiTech Girls Hostel
+          </p>
+          <p style="font-size: large;margin-top: 0px;margin-bottom: 0px;">
+            PSG Institute of Technology and Applied Research
+          </p>
+          <p style="font-size: medium;margin-top: 0px;">
+            Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu
+            641062
+          </p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="activities.html">Activities</a></li> -->
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div style="margin-left: 100px; margin-right: 250px;
+    justify-content: center;
+    align-items: center;">
+      <table style="margin: 100px;">
+        <thead>
+          <tr>
+            <th>Token Type</th>
+            <th>Charge (INR)</th>
+            <th>Quantity</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="img-box" src="assets/vegToken.png" /></td>
+            <td>10</td>
+            <td style="border-right:none;"><input type="number" id="token1Qty" min="0" /></td>
+            <td style="border-left:none;">
+              <button onclick="addToAccount('Veg Token', 10, 'token1Qty')">
+                Request
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="img-box" src="assets/nonvegToken.png" /></td>
+            <td>15</td>
+            <td style="border-right:none;"><input type="number" id="token2Qty" min="0" /></td>
+            <td style="border-left:none;">
+              <button onclick="addToAccount('Non-Veg Token', 15, 'token2Qty')">
+                Request
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="img-box" src="assets/specialToken.png" /></td>
+            <td>50</td>
+            <td style="border-right:none;"><input type="number" id="token3Qty" min="0" /></td>
+            <td style="border-left:none;">
+              <button onclick="addToAccount('Special Token', 50, 'token3Qty')">
+                Request
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Token Record:</h2>
+      <table id="userAccount" style="margin: 100px; margin-top: 20px;">
+        <thead>
+          <tr>
+            <th>Token Type</th>
+            <th>Quantity</th>
+            <th>Total Charge (INR)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>

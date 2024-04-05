@@ -10,48 +10,72 @@
   </head>
   <body>
     <header>
-      <div id="logo-header">
-        <div id="logo-container">
+      <div class="logo-header">
+        <div class="logo-container">
           <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
         </div>
         <div id="logo-title">
-          <p style="font-size: larger; font-weight: bolder;">PSGiTech Girls Hostel</p>
-          <p style="font-size: large;">PSG Institute of Technology and Applied Research</p>
-          <p style="font-size: medium;">Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu 641062</p>
+          <p
+            style="
+              font-size: larger;
+              font-weight: bolder;
+              margin-bottom: 5px;
+              margin-top: 40px;
+            "
+          >
+            PSGiTech Girls Hostel
+          </p>
+          <p style="font-size: large; margin-top: 0px; margin-bottom: 0px">
+            PSG Institute of Technology and Applied Research
+          </p>
+          <p style="font-size: medium; margin-top: 0px">
+            Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu
+            641062
+          </p>
         </div>
       </div>
-      <!-- <nav id="top-nav">
+      <nav class="top-nav">
         <div>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="activities.html">Activities</a></li> -->
+            <li><a href="profile.html">Profile</a></li>
           </ul>
         </div>
-      </nav> -->
+      </nav>
     </header>
-      <div id="notif-grid">
-        <div class="notif-grid-content">
-          <div id="marqueeContent">
-            <marquee direction="up" height="200" scrollamount="2" scrolldelay="20" vspace="10">
-              <p>Today room cleaning from 301 to 322</p>
-              <p>Zumba session starts at 5:30pm GET READY!!!</p>
-              <p>Today snack menu changed,biscuit packet will be provided.</p>
-              <p>REMAINDER! Hostel Fee Due on 15 DEC</p>
-            </marquee>
-          </div>
+    <div style="justify-items: center">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="assets/sample1.jpg" style="width: 100%" />
         </div>
-        <div class="notif-grid-content">
+
+        <div class="mySlides fade">
+          <img src="assets/sample2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/sample3.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+      </script>
+    </div>
+    <!-- <div class="notif-grid-content">
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <img src="assets/sample1.jpeg" style="width: 500px" />
+            <img src="assets/sample1.jpg" style="width: 500px" />
           </div>
 
           <div class="mySlides fade">
-            <img src="assets/sample2.jpeg" style="width: 500px" />
+            <img src="assets/sample2.jpg" style="width: 500px" />
           </div>
 
           <div class="mySlides fade">
-            <img src="assets/sample3.jpeg" style="width: 500px" />
+            <img src="assets/sample3.jpg" style="width: 500px" />
           </div>
 
           <div class="mySlides fade">
@@ -69,14 +93,51 @@
           let slideIndex = 0;
           showSlides();
         </script>
+      </div> -->
+    <!--  -->
+    <div id="notif-grid">
+      <div class="notif-grid-content">
+        <div id="announcements-container">
+          <div>Announcements</div>
+          <div id="marqueeContent">
+            <marquee
+              direction="up"
+              height="200"
+              scrollamount="2"
+              scrolldelay="20"
+              vspace="10"
+            >
+              <p>Room cleaning from 301 to 322</p>
+              <br />
+              <p>No Zumba session at 5.30PM due to trainer unavailability</p>
+              <br />
+              <p>Snack menu change! Biscuit will be provided today</p>
+              <br />
+              <p>REMAINDER! Hostel Fee Due on 15 DEC</p>
+              <br />
+            </marquee>
+          </div>
+        </div>
       </div>
       <div class="notif-grid-content">
-        <div>
+        <div class="notification">
           <div>Today's Menu</div>
-          <div>Breakfast: Idli, Vada, Sambar, Coconut Chutney</div>
-          <div>Lunch: Lemon Rice, Potato, White Rice, Rasam, Curd, Apallam</div>
-          <div>Snacks: Mixture, Tea, Bread, Jam</div>
-          <div>Dinner: Aloo Chappathi, Gravy, Curd Rice, Tomato Sevai</div>
+          <div class="notification-content">
+            <ul>
+              <li>
+                <strong>Breakfast:</strong> Idli, Vada, Sambar, Coconut Chutney
+              </li>
+              <li>
+                <strong>Lunch:</strong> Lemon Rice, Potato, White Rice, Rasam,
+                Curd, Apallam
+              </li>
+              <li><strong>Snacks:</strong> Mixture, Tea, Bread, Jam</li>
+              <li>
+                <strong>Dinner:</strong> Aloo Chappathi, Gravy, Curd Rice,
+                Tomato Sevai
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

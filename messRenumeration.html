@@ -1,21 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSGiTech Hostel | Leave Form</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <style>
+      h1 {
+        color: #333;
+        text-align: left; /* Align title to the left */
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: RGB(2, 78, 93);
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <div class="logo-container">
+          <a href="index.html"><img src="assets/psg_tech_logo.png" /></a>
+        </div>
+        <div id="logo-title">
+          <p style="font-size: larger; font-weight: bolder;margin-bottom: 5px;margin-top: 40px;">
+            PSGiTech Girls Hostel
+          </p>
+          <p style="font-size: large;margin-top: 0px;margin-bottom: 0px;">
+            PSG Institute of Technology and Applied Research
+          </p>
+          <p style="font-size: medium;margin-top: 0px;">
+            Salem Highway, Avinashi Road, Coimbatore, Neelambur, Tamil Nadu
+            641062
+          </p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="activities.html">Activities</a></li> -->
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
       </nav>
-    <div style="top:50px">
-        Mess Renumeration Form
+    </header>
+    <div class="content" style="top: 50px">
+      <form>
+        <h1>Mess Remuneration</h1>
+
+        <label for="days">How many days:</label>
+        <input type="number" id="days" name="days" required />
+
+        <label for="date">From-To Date:</label>
+        <input
+          type="text"
+          id="date"
+          name="date"
+          placeholder="MM/DD/YYYY - MM/DD/YYYY"
+          required
+        />
+
+        <label for="regNumber">Register Number:</label>
+        <input type="text" id="regNumber" name="regNumber" required />
+
+        <label for="department">Department & Branch:</label>
+        <input type="text" id="department" name="department" required />
+
+        <label for="roomNumber">Room Number:</label>
+        <input type="text" id="roomNumber" name="roomNumber" required />
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
